@@ -1,4 +1,20 @@
 ---
+# Notes de traduction :
+# J'ai parfois choisi de laisser tel quel certains mots pour refléter l'usage. Typiquement, on entend couramment "item" et "Data Pack" et non "objet" et "pack de données".
+# Voici donc une liste des mots les plus importants avec la traduction choisie :
+# Model => Modèle
+# Item -> Item
+# Rig -> Ossature
+# Bone -> Os
+# Frame -> Image
+# Keyframe -> Image clé
+# Exporter -> Exportateur
+# Tag -> Tag
+# Predicate -> Prédicat
+# Snapping Value -> Valeur d'accrochage
+# Root Entity -> Entité racine
+# Scoreboard -> Scoreboard
+
 #? AJ
 animatedJava:
     plugin:
@@ -62,11 +78,11 @@ animatedJava:
                 - N'affecte vraiment que les exportateurs Statue et Animation.
 
         rigItem:
-            title: Ossature d'objet
+            title: Item d'ossature
             description:
-                - L'objet qui va être utilisé pour afficher les modèles sur les porte-armures
+                - L'item qui va être utilisé pour afficher les modèles sur les porte-armures
             errors:
-                invalidMinecraftItem: L'objet choisi n'existe pas !
+                invalidMinecraftItem: L'item choisi n'existe pas !
 
         rigModelsExportFolder:
             title: Dossier d'exportation des modèles d'ossatures
@@ -76,9 +92,9 @@ animatedJava:
                 invalidPath: Le chemin choisi n'est pas un emplacement valide vers lequel exporter les modèles !
 
         predicateFilePath:
-            title: Modèle de prédicat d'ossature d'objet
+            title: Modèle de prédicat d'item d'ossature
             description:
-                - Le fichier de modèle d'objet de l'ossature de l'objet
+                - Le fichier de modèle d'item de l'item d'ossature
             errors:
                 notEqualToRigItem: Le chemin doit se terminer sur un fichier nommé %rigItem.json
 
@@ -184,7 +200,7 @@ animatedJava:
                 body:
                     - '%reason'
                     - Animated Java ne prend en charge que la fusion dans des modèles de prédicats contrôlés par Animated Java.
-                    - Veuillez vous assurer que vous essayez de fusionner votre prédicat de modèle d'objet avec un prédicat de modèle d'objet Animated Java préexistant valide.
+                    - Veuillez vous assurer que vous essayez de fusionner votre prédicat de modèle d'item avec un prédicat de modèle d'item Animated Java préexistant valide.
                 reasons:
                     overridesMissing: La liste des remplacements de modèle est manquante.
                     ajMetaMissing: Le fichier de modèle à fusionner n'est pas un fichier de prédicat Animated Java.
@@ -447,7 +463,7 @@ animatedJava:
                 animatingFlagScoreboardObjective:
                     title: Scoreboard du signal d'animation
                     description:
-                        - Le nom de l'objectif du scorebaird utilisé pour demander si une ossature est activement en train d'animer
+                        - Le nom de l'objectif du scoreboard utilisé pour demander si une ossature est activement en train d'animer
 
                 animationLoopModeScoreboardObjective:
                     title: Scoreboard du mode d'animation en boucle
